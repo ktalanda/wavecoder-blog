@@ -1,0 +1,7 @@
+# DDD beyond software
+
+Recently, I came across an Eric Evans lecture about Domain-Driven Design. I find this topic extremely interesting.
+
+In this talk, among the other topics, he discussed what the model should be. The idea is that the model we create doesn't need to be highly detailed or realistic. It just needs to be useful and solve the specific problem. As an example, he used a Mercator projection of the globe. When we look at the size of different countries and compare them to each other, it is far from the real proportions. But it is still widely used because it is a simple projection and can show directions. The photograph of the Earth from space, even though it is most realistic, would not be very useful for this purpose.
+
+I believe that this thinking applies to many problems, both in the software engineering role and far beyond. We don't need to find perfect models and ideal solutions. Instead, we need to solve the problem we are facing. In a sport like jiujitsu, the goal is not to analyse every technique and create a perfect model of each step, but rather to understand how to use it effectively. We need to map it in our head in a simple manner to be able to quickly remind ourselves and leave the details to be resolved as we apply it.
