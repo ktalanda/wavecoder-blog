@@ -20,6 +20,26 @@ This repository contains blog posts written in Markdown format. Each blog post i
 
 ## 🔄 Automation
 
+### New Post Creation (`post.sh`)
+
+The `post.sh` script simplifies creating new blog posts:
+
+```bash
+./post.sh <date> <title>
+```
+
+**Example:**
+```bash
+./post.sh 250816 "My New Blog Post"
+```
+
+The script:
+- Creates a new folder named with the provided date (YYMMDD format)
+- Generates a `content.md` file inside the folder
+- Adds the title as a markdown header (`# Title`) as the first line
+- Includes placeholder text for content
+- Validates date format and prevents duplicate posts
+
 ### Sync Script (`sync.sh`)
 
 The `sync.sh` script automatically:
