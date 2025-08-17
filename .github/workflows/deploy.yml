@@ -21,17 +21,17 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ vars.AWS_REGION }}
           
-      - name: Sync to S3
+      - name: Sync posts to S3
         run: |
-          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME }}/blog/ \
-            --exclude ".git/*" \
-            --exclude ".github/*" \
-            --exclude "README.md" \
+          aws s3 sync posts/ s3://${{ vars.S3_BUCKET_NAME }}/ \
             --delete \
             --cache-control "max-age=86400"
             
       - name: Invalidate CloudFront (optional)
         run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
           aws cloudfront create-invalidation \
             --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} \
             --paths "/*"
