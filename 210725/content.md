@@ -1,4 +1,4 @@
-# Power and thread of specialisation
+# Power and threat of specialisation
 
 Today I would like to share some of my thoughts about a book that I have recently read. The title is “Zero to One” and it was written by Peter Thiel. It is a very interesting position because it talks about building a big company from a successful entrepreneur and venture capitalist perspective. I have huge respect for the author. The list of his achievements is very long, so I would say his approach has been proven working in the real life.
 
