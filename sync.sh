@@ -2,11 +2,11 @@
 
 # Script to update manifest.json with all folder names in descending order
 
-echo "Analyzing folders in the posts directory..."
+echo "Analyzing folders in the project..."
 
-# Get all directories in posts folder, exclude system folders, sort in descending order
-folders=$(find posts -maxdepth 1 -type d -not -name ".*" -not -name "posts" | \
-          sed 's|^posts/||' | \
+# Get all directories, exclude system folders, sort in descending order
+folders=$(find . -maxdepth 1 -type d -not -name ".*" -not -name "." | \
+          sed 's|^\./||' | \
           sort -r)
 
 # Convert to JSON array format
