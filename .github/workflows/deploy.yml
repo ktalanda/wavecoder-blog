@@ -23,7 +23,7 @@ jobs:
           
       - name: Sync posts to S3
         run: |
-          aws s3 sync ./posts/ s3://${{ vars.S3_BUCKET_NAME }}/ \
+          aws s3 sync ./posts/ s3://${{ vars.S3_BUCKET_NAME }}/blog/ \
             --delete \
             --cache-control "max-age=86400"
             
