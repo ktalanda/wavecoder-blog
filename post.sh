@@ -24,25 +24,24 @@ if ! [[ "$DATE" =~ ^[0-9]{6}$ ]]; then
 fi
 
 # Check if folder already exists
-if [ -d "$DATE" ]; then
-    echo "❌ Error: Post folder '$DATE' already exists!"
+if [ -d "posts/$DATE" ]; then
+    echo "❌ Error: Post folder 'posts/$DATE' already exists!"
     exit 1
 fi
 
 # Create the post folder
-echo "📁 Creating post folder: $DATE"
-mkdir "$DATE"
+echo "📁 Creating post folder: posts/$DATE"
+mkdir -p "posts/$DATE"
 
 # Create content.md with title as header
 echo "📝 Creating content.md with title: $TITLE"
-echo "# $TITLE" > "$DATE/content.md"
-echo "" >> "$DATE/content.md"
-echo "Your content goes here..." >> "$DATE/content.md"
+echo "# $TITLE" > "posts/$DATE/content.md"
+echo "" >> "posts/$DATE/content.md"
 
 echo "✅ New blog post created successfully!"
-echo "📂 Folder: $DATE/"
-echo "📄 File: $DATE/content.md"
+echo "📂 Folder: posts/$DATE/"
+echo "📄 File: posts/$DATE/content.md"
 echo ""
-echo "You can now edit $DATE/content.md to add your blog content."
+echo "You can now edit posts/$DATE/content.md to add your blog content."
 
 ./sync.sh
