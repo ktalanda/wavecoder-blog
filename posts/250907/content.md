@@ -1,4 +1,4 @@
-# History relativity
+# Relativity of history
 
 It was a sunny, hot day in Sydney. At that time I was living in Bondi Beach, next to one of the most iconic Aussie beaches. By the late afternoon I got home, grabbed my board and walked towards the ocean for my daily dose of surfing. Since Bondi was usually overcrowded and that day it wasn't producing any significant waves, I headed south towards Tamarama. From my place it was around 15 minutes walk, but in those pleasent conditions, even though I had to go up the hill it didn't bother me at all. When I arrived at Tamarama I realised the conditions were really good. Only few surfers in the water and nice lines racing towards the shore.
 
